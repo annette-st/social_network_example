@@ -1,0 +1,14 @@
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+}
+
+.newPost button {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+}
+

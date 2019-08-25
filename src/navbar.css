@@ -1,0 +1,10 @@
+.nav {
+    display: inline-flex;
+    flex-direction: column;
+
+}
+
+.nav a {
+    border: 1px solid darkred;
+
+}
