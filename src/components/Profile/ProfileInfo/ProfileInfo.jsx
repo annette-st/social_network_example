@@ -5,7 +5,7 @@ import s from './ProfileInfo.module.css';
 const ProfileInfo = (props) => {
     return (
         <div className={s.profileInfo}>
-            <img src={props.mainPhoto}/>
+            <img src='https://www.w3schools.com/howto/img_avatar.png'/>
         </div>
     );
 }

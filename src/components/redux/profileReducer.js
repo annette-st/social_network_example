@@ -1,23 +1,43 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST = 'UPDATE-NEW-POST';
 
-const profileReducer = (state, action) => {
+let initialState =  {
+    posts: [
+        {id:1, content: 'Post1', likes: 10},
+        {id:1, content: 'Post2', likes: 20},
+        {id:1, content: 'Post3', likes: 30},
+        {id:1, content: 'Post4', likes: 40}
+    ],
+        mainPhoto: 'https://www.w3schools.com/howto/img_avatar.png',
+        newPostText: 'dich'
+};
+
+const profileReducer = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_POST:
+        case ADD_POST: {
+            let stateCopy = {...state};
+            stateCopy.posts = [...state.posts];
             let newPost = {
                 id: 5,
-                content: state.newPostText,
+                content: stateCopy.newPostText,
                 likes: 0
             };
-            state.posts.push(newPost);
-            state.newPostText = '';
-            return state;
-        case UPDATE_NEW_POST:
-            state.newPostText = action.newPostText;
-            return state;
+            stateCopy.posts.push(newPost);
+            stateCopy.newPostText = '';
+            return stateCopy;
+        }
+        case UPDATE_NEW_POST: {
+            let stateCopy = {...state};
+            stateCopy.newPostText = action.newPostText;
+            return stateCopy;
+        }
         default:
             return state;
     }
 };
+
+export const addPostActionCreator = () => ({ type: ADD_POST });
+
+export const updatePostActionCreator = (text) => ({ type: UPDATE_NEW_POST, newPostText: text });
 
 export default profileReducer;

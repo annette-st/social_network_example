@@ -1,0 +1,13 @@
+.usersPhoto {
+    height: 50px;
+    weight: 50px;
+    border-radius: 50%;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+/*.pageNumber {*/
+/*    margin: 5px;*/
+/*}*/

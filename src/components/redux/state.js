@@ -5,6 +5,8 @@ const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST = 'UPDATE-NEW-POST';
 const ADD_MESSAGE = 'ADD-MESSAGE';
 const UPDATE_NEW_MESSAGE = 'UPDATE-NEW-MESSAGE';
+const FOLLOW = 'FOLLOW';
+const UNFOLLOW = 'UNFOLLOW';
 
 let store = {
     _state :  {
@@ -58,15 +60,7 @@ let store = {
 };
 
 
-export const addPostActionCreator = () => ({ type: ADD_POST });
-
-export const updatePostActionCreator = (text) => ({ type: UPDATE_NEW_POST, newPostText: text });
-
-export const addNewMessageActionCreator = () => ({ type: ADD_MESSAGE });
-
-export const updateNewMessageActionCreator = (text) => ({ type: UPDATE_NEW_MESSAGE, newMessageText: text });
-
 
 window.store = store;
 
-export default store;
+// export default store;
