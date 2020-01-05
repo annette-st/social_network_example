@@ -20,7 +20,6 @@ const MyPosts = (props) => {
 
     return (
             <div>
-                New post
                 <div className={s.newPost}>
                     <div>
                         <textarea onChange={onPostChange} ref={newPostElem} value={props.newPostText}></textarea>
@@ -30,7 +29,6 @@ const MyPosts = (props) => {
                     </div>
                 </div>
                 <div className={s.posts}>
-                    My posts:
                     { posts }
                 </div>
 

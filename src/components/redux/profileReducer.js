@@ -3,13 +3,13 @@ const UPDATE_NEW_POST = 'UPDATE-NEW-POST';
 
 let initialState =  {
     posts: [
-        {id:1, content: 'Post1', likes: 10},
-        {id:1, content: 'Post2', likes: 20},
-        {id:1, content: 'Post3', likes: 30},
-        {id:1, content: 'Post4', likes: 40}
+        {id:1, content: 'hello everyone!', likes: 10},
+        {id:1, content: 'hello everyone1!', likes: 20},
+        {id:1, content: 'hello everyone2!', likes: 30},
+        {id:1, content: 'hello everyone3!', likes: 40}
     ],
         mainPhoto: 'https://www.w3schools.com/howto/img_avatar.png',
-        newPostText: 'dich'
+        newPostText: 'New post'
 };
 
 const profileReducer = (state = initialState, action) => {

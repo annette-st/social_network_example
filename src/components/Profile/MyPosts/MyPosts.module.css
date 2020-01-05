@@ -6,9 +6,19 @@
     padding-top: 50px;
 }
 
+.newPost {
+    margin: 5px 15px;
+
+}
+
 .newPost button {
     width: 100px;
     height: 30px;
-    padding: 5px;
+}
+
+* {
+    font-family: Arial;
+    font-weight: 400;
+    font-size: medium;
 }
 
